@@ -8,7 +8,7 @@ header{
   width: 100%;
 }
 h1, h2, h3{
-  font-family: Impact, Charcoal, sans-serif;
+  font-family: 'Sofia', Charcoal, sans-serif;
   text-align: center;
 }
 header, footer{
@@ -27,20 +27,21 @@ nav ul{
   display: flex;
   justify-content: space-around;
   align-items:baseline;
+  margin: 5px auto;
 }
 
 nav ul li{
   display: inline-block;
-  /*width: 20%*/
-  /*border: 1px solid red;*/
 }
 nav ul li a{
   text-decoration: none;
   font-size: 1.5em;
-  color: rgb(222, 158, 36)
+  color: rgb(222, 158, 36);
+  font-family: 'Antic Didone';
 }
 .rest_name a{
-  font-size: 2em;
+  font-size: 2.4em;
+  font-family: 'Sofia';
 }
 /*body specific styling here*/
 main{
@@ -66,7 +67,7 @@ main section>h1{
 #landing figcaption{
   margin: 0 0 20px 0;
   font-size: 1.7em;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Antic Didone", "Lucida Grande", sans-serif;
 }
 #landing figure img{
   border-radius: 35px;
@@ -76,17 +77,27 @@ main section>h1{
 
 }
 #landing .cta{
+  display: flex;
   margin: 0 auto;
   width: 90%;
 }
 #landing .cta>a{
   display: inline-block;
-  height: 100px;
-  background: rgb(55,55,55);
+  height: 40px;
+  width: 140px;
+  background-color: rgba(250,250,250,.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background: rgb(55,55,55);*/
+  border: 3px solid orange;
+  box-shadow: 3px 3px 2px rgba(100,100,100, 0.6);
   text-decoration: none;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Antic Didone", "Lucida Grande", sans-serif;
   color: rgb(0,0,0);
   text-align: center;
+  font-size:1.2em;
 }
 #landing .cta>a>img{
   box-shadow: 5px 5px 2px rgba(240,240,240, 0.4);
@@ -104,7 +115,6 @@ main section>h1{
   border: 1px solid black;
 }
 .menu h1, .menu h2, .menu h3{
-  font-family: Impact, Charcoal, sans-serif;
   text-align: center;
 }
 .menu h1{
@@ -125,11 +135,12 @@ main section>h1{
   padding: 5px;
 }
 .menu li p{
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: "Antic Didone", "Lucida Grande", sans-serif;
   text-align: center;
+  padding: 0 10px;
 }
 .menu li p:last-child{
-  background-color: rgb(240,240,240)
+  background: url('../img/subtle_white_mini_waves.png') repeat;
 }
 .menu h2 {
   font-size: 1.9em;
