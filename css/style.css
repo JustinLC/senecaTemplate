@@ -20,15 +20,23 @@ header, footer{
 /*section styling*/
 main>section{
   min-height: 800px;
+  padding-bottom: 20px;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items:baseline;
 }
 
 nav ul li{
   display: inline-block;
-  width: 20%;
+  /*width: 20%*/
   /*border: 1px solid red;*/
 }
 nav ul li a{
   text-decoration: none;
+  font-size: 1.5em;
   color: rgb(222, 158, 36)
 }
 .rest_name a{
@@ -52,14 +60,20 @@ main section>h1{
 }
 #landing figure img{
   display: block;
+  box-shadow: 5px 5px 2px #666;
   margin: 0 0 20px 0;
 }
 #landing figcaption{
   margin: 0 0 20px 0;
+  font-size: 1.7em;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 #landing figure img{
-  width: 100%;
+  border-radius: 35px;
+  display: block;
+  width: 60%;
+  margin: 10px auto 20px;
+
 }
 #landing .cta{
   margin: 0 auto;
@@ -67,16 +81,22 @@ main section>h1{
 }
 #landing .cta>a{
   display: inline-block;
-  width: 32%;
   height: 100px;
   background: rgb(55,55,55);
   text-decoration: none;
-  color: rgb(255,255,255);
-  border: 1px solid blue;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: rgb(0,0,0);
   text-align: center;
 }
-#landing .cta>a{
-  background: url("https://unsplash.it/100/100?random");
+#landing .cta>a>img{
+  box-shadow: 5px 5px 2px rgba(240,240,240, 0.4);
+}
+#landing .cta>a>p{
+  margin: 0;
+}
+#landing .cta{
+  display: flex;
+  justify-content: space-around;
 }
 
 /*menu pages*/
@@ -96,12 +116,20 @@ main section>h1{
   margin:0 auto;
   width: 70%;
 }
+.menu li{
+  margin-bottom: 10px;
+}
 .menu li h3{
-  border-bottom: 1px solid black;
+  font-size: 1.7em;
+  margin: 0;
+  padding: 5px;
 }
 .menu li p{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  border-bottom: 1px solid black;
+  text-align: center;
+}
+.menu li p:last-child{
+  background-color: rgb(240,240,240)
 }
 .menu h2 {
   font-size: 1.9em;
