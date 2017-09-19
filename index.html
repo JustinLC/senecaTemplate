@@ -46,7 +46,7 @@ Template Assignment
         <h1>Share Our Table</h1>
         <section>
           <figure>
-            <img src="" alt="dining table with food">
+            <img src="https://unsplash.it/400/200?random" alt="dining table with food">
             <figcaption>
               Welcome to Stu Eats.  Cooking meals like you would eat at home is what we do.  We cook with passion, so you can share joy with your friends and family.  Dine with us.  Be a part of our family.
             </figcaption>
@@ -167,30 +167,34 @@ Template Assignment
       -->
       <section id="contact">
         <h1>Contact Us</h1>
-        <p>Reach out to us for your next meal!</p>
-        <div>
-          <ul>
-            <li>
-              <span>Address:</span>
-              <ul>
-                <li>20 Yum Street</li>
-                <li>Toronto, ON</li>
-              </ul>
-            </li>
-            <li>
-              <span>Phone:</span>
-              <span>416-555-5555</span>
-            </li>
-            <li>
-              <span>Email:</span>
-              <span>food@stueats.com</span>
-            </li>
-          </ul>
-        </div>
+        <address class="vcard">
+          <span class="adr">
+            <span class="street-address">169 University Avenue</span>
+            <span class="locality">Toronto</span>,
+            <abbr class="region" title="Ontario">ON</abbr>
+            <span class="postal-code">L1L 1L1</span>
+            <span class="country-name">Canada</span>
+          </span>
+          <p>416-555-5555</p>
+          <p>reserve@stueats.com</p>
+        </address>
+        <h2>Questions? Drop a line!</h2>
+        <form action="">
+          <fieldset>
+            <input type="text" placeholder="Name"/>
+          </fieldset>
+          <fieldset>
+            <input type="email" placeholder="Email"/>
+          </fieldset>
+          <fieldset>
+            <textarea name="" placeholder="Add comments here"></textarea>
+          </fieldset>
+          <input type="submit" value="Submit"/>
+        </form>
       </section>
     </main>
     <footer>
-      eat here.... do it now....
+      <p>&copy; Stuart Sackler 2017</p>
     </footer>
   </body>
 </html>

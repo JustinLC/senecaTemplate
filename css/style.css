@@ -1,4 +1,4 @@
-/*header specific styling here*/
+/*header and footer specific styling here*/
 header{
   position:fixed;
   top:0;
@@ -7,11 +7,19 @@ header{
   display: block;
   width: 100%;
 }
+h1, h2, h3{
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+}
 header, footer{
   background: url('../img/dark_embroidery.png') repeat rgb(0,0,0);
+  color: rgb(222, 158, 7);
+  font-family: Tahoma, Geneva, sans-serif;
 }
+
+/*section styling*/
 main>section{
-  height: 800px;
+  min-height: 800px;
 }
 
 nav ul li{
@@ -21,7 +29,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: rgb(255,255,255);
+  color: rgb(222, 158, 36)
 }
 .rest_name a{
   font-size: 2em;
@@ -31,8 +39,7 @@ main{
   margin:0 0 0 0;
 }
 main section>h1{
-  padding: 45px 0 0 0;
-  color: rgb(255,0,0);
+  padding: 65px 0 0 0;
 }
 
 /*landing specific styles here*/
@@ -41,8 +48,15 @@ main section>h1{
 }
 #landing figure{
   margin: 0 auto;
-  border: 1px solid black;
   width: 90%;
+}
+#landing figure img{
+  display: block;
+  margin: 0 0 20px 0;
+}
+#landing figcaption{
+  margin: 0 0 20px 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 #landing figure img{
   width: 100%;
@@ -54,6 +68,7 @@ main section>h1{
 #landing .cta>a{
   display: inline-block;
   width: 32%;
+  height: 100px;
   background: rgb(55,55,55);
   text-decoration: none;
   color: rgb(255,255,255);
@@ -61,7 +76,7 @@ main section>h1{
   text-align: center;
 }
 #landing .cta>a{
-  background:url("https://unsplash.it/100/100?random");
+  background: url("https://unsplash.it/100/100?random");
 }
 
 /*menu pages*/
@@ -104,6 +119,40 @@ main section>h1{
 #dinner{
   background: url('../img/upfeathers.png');
 }
+/* contact page styling */
+#contact{
+  border: 1px solid black;
+}
+#contact div{
+  margin: 0 auto;
+  width: 90%;
+  background: rgba(255,255,255, 0.4);
+}
+#contact ul{
+  list-style: none;
+  padding:0;
+}
+#contact address{
+  text-align: center;
+}
+#contact form{
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 50%;
+}
+#contact form fieldset{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#contact form input, #contact form textarea{
+  display: block;
+  margin: 10px auto;
+  width: 95%
+}
+#contact form textarea{
+  height: 100px;
+}
 /*footer styling here*/
 footer {
   position: fixed;
@@ -111,6 +160,8 @@ footer {
   left:0;
   width: 100%;
   height: 20px;
-  color: rgb(255,255,255);
   font-size: .9em;
+}
+footer p{
+  margin: 2px 0 0 10px;
 }
