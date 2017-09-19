@@ -1,9 +1,116 @@
+/*header specific styling here*/
 header{
   position:fixed;
   top:0;
   left: 0;
-  background:
+  height: 60px;
+  display: block;
+  width: 100%;
 }
+header, footer{
+  background: url('../img/dark_embroidery.png') repeat rgb(0,0,0);
+}
+main>section{
+  height: 800px;
+}
+
 nav ul li{
   display: inline-block;
+  width: 20%;
+  /*border: 1px solid red;*/
+}
+nav ul li a{
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+.rest_name a{
+  font-size: 2em;
+}
+/*body specific styling here*/
+main{
+  margin:0 0 0 0;
+}
+main section>h1{
+  padding: 45px 0 0 0;
+  color: rgb(255,0,0);
+}
+
+/*landing specific styles here*/
+#landing, #contact{
+  background: url('../img/vintage-concrete.png') repeat;
+}
+#landing figure{
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 90%;
+}
+#landing figure img{
+  width: 100%;
+}
+#landing .cta{
+  margin: 0 auto;
+  width: 90%;
+}
+#landing .cta>a{
+  display: inline-block;
+  width: 32%;
+  background: rgb(55,55,55);
+  text-decoration: none;
+  color: rgb(255,255,255);
+  border: 1px solid blue;
+  text-align: center;
+}
+#landing .cta>a{
+  background:url("https://unsplash.it/100/100?random");
+}
+
+/*menu pages*/
+.menu{
+  border: 1px solid black;
+}
+.menu h1, .menu h2, .menu h3{
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+}
+.menu h1{
+  font-size: 2.2em;
+}
+.menu ul{
+  list-style:none;
+  padding:0;
+  margin:0 auto;
+  width: 70%;
+}
+.menu li h3{
+  border-bottom: 1px solid black;
+}
+.menu li p{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  border-bottom: 1px solid black;
+}
+.menu h2 {
+  font-size: 1.9em;
+}
+.menu section {
+  background: rgb(150,150,150);
+  box-shadow: 5px 5px 2px #888888;
+  border: 1px solid black;
+}
+/*lunch specific style*/
+#lunch {
+  background: url('../img/swirl_pattern.png');
+}
+/*dinner specific style*/
+#dinner{
+  background: url('../img/upfeathers.png');
+}
+/*footer styling here*/
+footer {
+  position: fixed;
+  bottom: 0px;
+  left:0;
+  width: 100%;
+  height: 20px;
+  color: rgb(255,255,255);
+  font-size: .9em;
 }
