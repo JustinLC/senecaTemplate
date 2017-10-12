@@ -1,26 +1,91 @@
-<!--
-Stuart Sackler
-Date: August 30, 2017
-for Stuart Sackler
-INM220 AA
-Template Assignment
--->
-<!--
-  http://html5doctor.com/html-5-reset-stylesheet/
-  https://necolas.github.io/normalize.css/
--->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
-    <script src="js/main.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <p>my cats breath doesn't smell like cat food!</p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" data-instrument="instrument1">drums</a>
+      <a href="#" data-instrument="instrument2">guitar</a>
+    </nav>
+  </header>
+  <div class="sounds" id="instrument1">
+    <a data-sound="clap" class="sound">
+      clap
+    </a>
+    <a data-sound="hihat" class="sound">
+      hihat
+    </>
+    <a data-sound="kick" class="sound">
+      kick
+    </a>
+    <a data-sound="openhat" class="sound">
+      openhat
+    </a>
+    <a data-sound="boom" class="sound">
+      boom
+    </a>
+    <a data-sound="ride" class="sound">
+      ride
+    </a>
+    <a data-sound="snare" class="sound">
+      snare
+    </a>
+    <a data-sound="tom" class="sound">
+      tom
+    </a>
+    <a data-sound="tink" class="sound">
+      tink
+    </a>
+  </div>
+  <div class="sounds" id="instrument2">
+    <a data-sound="clap" class="sound">
+      clap2
+    </a>
+    <a data-sound="hihat" class="sound">
+      hihat2
+    </>
+    <a data-sound="kick" class="sound">
+      kick2
+    </a>
+    <a data-sound="openhat" class="sound">
+      openhat2
+    </a>
+    <a data-sound="boom" class="sound">
+      boom2
+    </a>
+    <a data-sound="ride" class="sound">
+      ride2
+    </a>
+    <a data-sound="snare" class="sound">
+      snare2
+    </a>
+    <a data-sound="tom" class="sound">
+      tom2
+    </a>
+    <a data-sound="tink" class="sound">
+      tink2
+    </a>
+  </div>
+  <!-- and here we have some elements that belong in body... that ordinarily would not -->
+  <audio data-sound="clap" src="sounds/clap.wav"></audio>
+  <audio data-sound="hihat" src="sounds/hihat.wav"></audio>
+  <audio data-sound="kick" src="sounds/kick.wav"></audio>
+  <audio data-sound="openhat" src="sounds/openhat.wav"></audio>
+  <audio data-sound="boom" src="sounds/boom.wav"></audio>
+  <audio data-sound="ride" src="sounds/ride.wav"></audio>
+  <audio data-sound="snare" src="sounds/snare.wav"></audio>
+  <audio data-sound="tom" src="sounds/tom.wav"></audio>
+  <audio data-sound="tink" src="sounds/tink.wav"></audio>
+  <script src="js/audio.js"></script>
+  <footer>
+    <nav>
+      <a href="#" data-instrument="instrument1">drums</a>
+      <a href="#" data-instrument="instrument2">guitar</a>
+    </nav>
+  </footer>
+</body>
 </html>

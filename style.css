@@ -1,0 +1,85 @@
+/*  setting the base html styling*/
+html {
+  font-size: 16px;
+  background: rgb(6,107,43) bottom center;
+  background-size: cover;
+}
+/* base font size for em is 16px */
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* removing the underline from the nav links */
+nav a{
+  text-decoration: none;
+}
+/* setting the header to be fixed to the top of the screen */
+header{
+  position: fixed;
+  width: 100%;
+  background: rgb(8, 21, 252);
+  height: 40px;
+  border-bottom: 5px solid black;
+}
+nav a{
+  display: inline-block;
+}
+nav{
+  text-align:center;
+}
+/*
+  setting the top padding to 5px
+  text align centre moves all the text contents of the nav to centre
+*/
+header nav{
+  padding: 5px 0 0 0;
+}
+/*
+  nav items are moved down 5px as we are not using flex to centre
+*/
+header nav a{
+  font-size: 1.6em;
+  margin: 0 30px;
+}
+/*
+
+*/
+footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 20px;
+  background: rgb(8, 21, 252);
+}
+#instrument2{
+  display:none;
+}
+.sounds {
+  display: flex;
+  flex: 1;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.sound {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
