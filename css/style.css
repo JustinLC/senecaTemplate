@@ -1,1 +1,73 @@
+/* basic styles for the document */
+html {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* style for the header area */
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+}
+header p{
+    display: block;
+    text-align: center;
+}
+/* error section styles */
+main div.errors{
+    display:none;
+}
+/* basic form width and placement */
+form#signup{
+    width: 90%;
+    margin: 0 auto;
+}
+/* styling for the name prefix section */
+#fieldset_prefix>ul{
+    margin: 0;
+    padding: 0;
+}
+#fieldset_prefix li{
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+}
+#fieldset_prefix li input{
+    margin-right: 5px;
+}
+/* generic text input field styling */
+div.text_input_field{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+div.text_input_field label{
+    display: inline-block;
+    text-align: right;
+    margin-right:5px;
+    width: 25%;
+}
+div.text_input_field input, div.text_input_field select{
+    display: inline-block;
+    width:70%;
+    text-align: left;
+}
+.mixed_input_fields{
+    display: block;
+    text-align: center;
+}
+/* submit button */
+input[type="submit"]{
+    margin: 10px 0 0 0;
+}
 
+/* text area delivery instruction section */
+#signup #instructions{
+    width: 100%;
+    height: 70px;
+}

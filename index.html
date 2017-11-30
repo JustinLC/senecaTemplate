@@ -1,26 +1,85 @@
-<!--
-Stuart Sackler
-Date: August 30, 2017
-for Stuart Sackler
-INM220 AA
-Template Assignment
--->
-<!--
-  http://html5doctor.com/html-5-reset-stylesheet/
-  https://necolas.github.io/normalize.css/
--->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Template</title>
-    <script src="js/main.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/normalize.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <p>my cats breath doesn't smell like cat food!</p>
-  </body>
+<!DOCTYPE html>
+<!-- normalize.css is from https://necolas.github.io/normalize.css/7.0.0/normalize.css-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community News Delivery</title>
+    <script src="scripts/formcheck.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Community News To Your Door</h1>
+        <p>It's great to know more about where you live!  Sign up for your free, delivered, community newsletter.</p>
+    </header>
+    <main>
+        <form id="signup">
+            <fieldset id="fieldset_prefix">
+                <legend>Salutation</legend>
+                <ul>
+                    <li><input type="radio" name="salutation" id="Ms" value="Ms"><label for="Ms">Miss</label></li>
+                    <li><input type="radio" name="salutation" id="Mrs" value="Mrs"><label for="Mrs">Mrs.</label></li>
+                    <li><input type="radio" name="salutation" id="Mr" value="Mr"><label for="Mr">Mr.</label></li>
+                </ul>
+            </fieldset>
+            <fieldset id="fieldset_name">
+                <legend>Name</legend>
+                <div class="text_input_field">
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" type="text" maxlength=20/>
+                </div>
+                <div class="text_input_field">
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" type="text" maxlength=20/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Address</legend>
+                <div class="text_input_field">
+                    <label for="street_address" id="street_address_label">Street Address:</label><input type="text" id="street_address" maxlength="65">
+                </div>
+                <div class="text_input_field">
+                    <label for="unit">Unit:</label><input type="text" id="unit" maxlength="5" placeholder="optional">
+                </div>
+                <div class="text_input_field">
+                    <label for="city">City:</label><input type="text" id="city" maxlength="25">
+                </div>
+                <div class="text_input_field">
+                    <label for="province">Province:</label>
+                    <select name="province">
+                        <option value="" selected>Select Province</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NFLD">Newfoundand and Labrador</option>
+                        <option value="NWT">Northwest Territories</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="NVT">Nunavut</option>
+                        <option value="MAN">Manitoba</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SASK">Saskatchewan</option>
+                        <option value="YK">Yukon</option>
+                    </select>
+                </div>
+                <div class="text_input_field">
+                    <label for="postalcode">Postal Code:</label><input type="text" id="postalcode" maxlength=7/>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <textarea name="" id="instructions"></textarea>
+            </fieldset>
+            <input type="submit">
+            <section id="errors">
+            </section>
+        </form>
+    </main>
+    <script>
+        formChecker.initForm(document.querySelector("#signup"));
+    </script>
+</body>
 </html>
