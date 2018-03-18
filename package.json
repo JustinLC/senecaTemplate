@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run sass\" \"npm run lite\"",
     "lite": "lite-server",
-    "sass":"node-sass --watch --output-style compressed -o dist/css src/scss"
+    "sass": "node-sass --watch --output-style compressed -o dist/css src/scss"
   },
   "author": "Stuart Sackler",
   "license": "ISC",
