@@ -1,29 +1,12 @@
 @import "colors/colors.scss";
+@import "partials/_cta.scss";
+@import "partials/_nav.scss";
+@import "partials/_productLists.scss";
+@import "partials/_footer.scss";
 *{
     margin:0;
     padding: 0;
     font-family: monospace;
-  }
-  
-  nav{
-    position: fixed;
-    width: 100vw;
-    ul{
-      display: flex;
-      list-style: none;
-      justify-content: space-around;
-      height: 40px;
-      align-items: center;
-      background:var(--navBackground);
-      font-size: var(--navFontSize);
-    }
-    a{
-      text-decoration:none;
-      color: var(--navFontColor);
-      &:hover{
-        text-decoration: underline;
-      }
-    }
   }
     
   /*landing page styles go below*/
@@ -36,30 +19,6 @@
     p{
       font-size: 1.4em;
       margin: 60px 20px;
-    }
-  }
-  
-  /*lets add some styles to our call to action(cta)*/
-  .cta{
-    display: flex;
-    list-style:none;
-    justify-content: space-around;
-    li{
-      width: 25%;
-      background-color:var(--CTAColor);
-      padding:10px;
-
-    }
-    img{
-      display: block;
-      border: 1px solid black;
-      width: 100%;
-      height: 150px;
-    }
-    a{
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
     }
   }
   
@@ -82,53 +41,15 @@
     }
   }
   
-  /*set a common width for all product lists*/
-  .products{
-    list-style: none;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .products{
-    font-size: 1.3em;
-    button{
-      margin-top: 10px;
-      padding: 5px;
-      font-size: 1.3em;
-    }
-    div{
-      padding-left: 10px;
-    }
-    li{
-      border: 1px solid black;
-      background-color: YellowGreen;
-      margin-bottom: 5px;
-      height: 100px;
-    }
-    img{
-      width: 100px;
-      height: 100px;
-      min-width: 100px;
-      background-color: black;
-      color: white;
-    }
-  }
-  
-  /*positioning with flexblox*/
-  .product_category li{
-    display: flex;
-  }
-  
-  /*finally lets style the contact page*/
   #contact{
     display:flex;
     align-items: center;
     justify-content: center;
     dl{
-      background: SeaGreen;
-      color: white;
+      background:$contactBackground;
+      color: $contactFontColor;
       padding: 40px;
-      box-shadow: 5px 5px #ccc;
+      box-shadow: 5px 5px $contactShadowColor;
     }
     dd{
       font-size: 1.9em;
@@ -142,11 +63,4 @@
       /*put a margin on the top of 60px*/
       margin-top:60px;
     }
-  }
-  footer{
-    position:fixed;
-    width: 100vw;
-    text-align: center;
-    bottom: 0;
-    background:var(--navBackground);
   }

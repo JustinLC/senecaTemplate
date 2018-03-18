@@ -1,0 +1,23 @@
+/*lets add some styles to our call to action(cta)*/
+  .cta{
+    display: flex;
+    list-style:none;
+    justify-content: space-around;
+    li{
+      width: 25%;
+      background-color:var(--CTAColor);
+      padding:10px;
+
+    }
+    img{
+      display: block;
+      border: 1px solid black;
+      width: 100%;
+      height: 150px;
+    }
+    a{
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
