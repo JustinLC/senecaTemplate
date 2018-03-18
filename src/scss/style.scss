@@ -1,13 +1,10 @@
-@import "colors/colors.scss";
+@import "_partials/reset.scss";
+@import "colors/_colors.scss";
 @import "partials/_cta.scss";
 @import "partials/_nav.scss";
 @import "partials/_productLists.scss";
 @import "partials/_footer.scss";
-*{
-    margin:0;
-    padding: 0;
-    font-family: monospace;
-  }
+
     
   /*landing page styles go below*/
   #landing{ 
