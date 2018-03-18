@@ -1,3 +1,4 @@
+@import "colors/colors.scss";
 *{
     margin:0;
     padding: 0;
@@ -13,12 +14,12 @@
       justify-content: space-around;
       height: 40px;
       align-items: center;
-      background: chartreuse;
-      font-size: 1.5em;
+      background:var(--navBackground);
+      font-size: var(--navFontSize);
     }
     a{
       text-decoration:none;
-      color: sienna;
+      color: var(--navFontColor);
       &:hover{
         text-decoration: underline;
       }
@@ -45,8 +46,9 @@
     justify-content: space-around;
     li{
       width: 25%;
-      background-color:SpringGreen;
+      background-color:var(--CTAColor);
       padding:10px;
+
     }
     img{
       display: block;
@@ -146,5 +148,5 @@
     width: 100vw;
     text-align: center;
     bottom: 0;
-    background: #00ff00;
+    background:var(--navBackground);
   }
