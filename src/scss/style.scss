@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+  }
+  
+  nav{
+    position: fixed;
+    width: 100vw;
+  }
+  /*
+    styling the nav using flexbox
+  */
+  
+  nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    background: chartreuse;
+    font-size: 1.5em;
+  }
+  
+  nav a{
+    text-decoration:none;
+    color: sienna;
+  }
+  nav a:hover{
+    text-decoration: underline;
+  }
+  
+  section{
+    height: 100vh;
+    padding-top: 40px;
+  }
+  
+  /*landing page styles go below*/
+  #landing h1{
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  #landing p{
+    font-size: 1.4em;
+    margin: 60px 20px;
+  }
+  
+  /*lets add some styles to our call to action(cta)*/
+  .cta{
+    display: flex;
+    list-style:none;
+    justify-content: space-around;
+  }
+  .cta li{
+    width: 25%;
+    background-color:SpringGreen;
+    padding:10px;
+  }
+  .cta img{
+    display: block;
+    border: 1px solid black;
+    width: 100%;
+    height: 150px;
+  }
+  .cta a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /*lets make some general styles for all 3 product sections!*/
+  section h2{
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  section>p.intro{
+    font-size: 1.2em;
+    width: 80%;
+    margin: 20px auto;
+    color: rgb(255,255,255);
+    padding: 20px;
+    background-color: rgb(10,10,10);
+  }
+  /*set a common width for all product lists*/
+  .products{
+    list-style: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /*set common styling for all product list items*/
+  .products li{
+    border: 1px solid black;
+    background-color: YellowGreen;
+    margin-bottom: 5px;
+    height: 100px;
+  }
+  
+  /*set common elements for all product images*/
+  .products img{
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    background-color: black;
+    color: white;
+  }
+  
+  /*set commond font sizing for products*/
+  .products, .products button{
+    font-size: 1.3em;
+  }
+  .products button{
+    margin-top: 10px;
+    padding: 5px;
+  }
+  
+  .products div{
+    padding-left: 10px;
+  }
+  
+  /*positioning with flexblox*/
+  .product_category li{
+    display: flex;
+  }
+  
+  /*finally lets style the contact page*/
+  #contact{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #contact dl{
+    background: SeaGreen;
+    color: white;
+    padding: 40px;
+    box-shadow: 5px 5px #ccc;
+  }
+  #contact dd{
+    font-size: 1.9em;
+  }
+  #contact dt{
+    font-size: 2.6em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
+  #contact dt:nth-of-type(2){
+    /*put a margin on the top of 60px*/
+    margin-top:60px;
+  }
+  

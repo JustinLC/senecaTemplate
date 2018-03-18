@@ -1,15 +1,18 @@
 {
-  "name": "templatenode",
-  "version": "0.0.0",
+  "name": "newtemplate",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "concurrently \"npm run sass\" \"npm run lite\"",
+    "lite": "lite-server",
+    "sass":"node-sass --watch --output-style compressed -o dist/css src/scss"
   },
   "author": "Stuart Sackler",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "concurrently": "^3.5.1",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.7.2"
   }
 }
