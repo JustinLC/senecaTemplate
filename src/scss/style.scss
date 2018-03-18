@@ -1,4 +1,5 @@
-@import "_partials/reset.scss";
+@import "partials/_reset.scss";
+@import "mixins/_prefixing.scss";
 @import "colors/_colors.scss";
 @import "partials/_cta.scss";
 @import "partials/_nav.scss";
@@ -46,7 +47,7 @@
       background:$contactBackground;
       color: $contactFontColor;
       padding: 40px;
-      box-shadow: 5px 5px $contactShadowColor;
+      @include box-shadow(5px, 5px, 5px, $contactShadowColor);
     }
     dd{
       font-size: 1.9em;
@@ -57,7 +58,6 @@
       margin-bottom: 10px;
     }
     dt:nth-of-type(2){
-      /*put a margin on the top of 60px*/
       margin-top:60px;
     }
   }
