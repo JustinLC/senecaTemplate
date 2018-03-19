@@ -1,6 +1,7 @@
 @import "partials/_reset.scss";
 @import "mixins/_prefixing.scss";
 @import "colors/_colors.scss";
+@import "fonts/_fonts.scss";
 @import "partials/_cta.scss";
 @import "partials/_nav.scss";
 @import "partials/_productLists.scss";
@@ -10,12 +11,12 @@
   /*landing page styles go below*/
   #landing{ 
     h1{
-      font-size: 2.5em;
+      font-size: $landingTitle;
       text-align: center;
       padding-bottom: 10px;
     }
     p{
-      font-size: 1.4em;
+      font-size: $landingParagraph;
       margin: 60px 20px;
     }
   }
@@ -25,12 +26,12 @@
     height: 100vh;
     padding-top: 40px;
     h2{
-      font-size: 2.2em;
+      font-size: $productSectionTitleFont;
       text-align: center;
       padding-bottom: 20px;
     }
     &>p.intro{
-      font-size: 1.2em;
+      font-size: $productSectionIntroFont;
       width: 80%;
       margin: 20px auto;
       color: rgb(255,255,255);
@@ -50,10 +51,10 @@
       @include box-shadow(5px, 5px, 5px, $contactShadowColor);
     }
     dd{
-      font-size: 1.9em;
+      font-size: $contactDefinitionFont;
     }
     dt{
-      font-size: 2.6em;
+      font-size: $contactTitleFont;
       text-decoration: underline;
       margin-bottom: 10px;
     }
